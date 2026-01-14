@@ -1,0 +1,27 @@
+停用
+docker compose down
+
+啟用並在背景運作
+docker compose up -d --build
+
+-v = 刪掉 volume
+docker compose down -v
+
+你現在應該能打開這些網址
+
+前端：http://localhost:8080
+
+API Health：http://localhost:8080/api/health
+
+API 連 DB：http://localhost:8080/api/db-time
+
+phpMyAdmin：http://localhost:8081
+
+phpMyAdmin 登入（你前面那套預設）：
+
+帳號：root
+
+密碼：對應你 compose 設的那組(123456)
+
+參考
+https://docs.docker.com/reference/samples/python/
